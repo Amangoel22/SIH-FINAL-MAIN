@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appraisal Report</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .chart-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .bar {
+            margin: 15px 0;
+            height: 40px;
+            text-align: right;
+            line-height: 40px;
+            color: white;
+            padding-right: 10px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: transform 0.2s ease;
+        }
+
+        .bar-1 { width: 60%; background-color: #f39c12; } 
+        .bar-2 { width: 70%; background-color: #8e44ad; }
+        .bar-3 { width: 80%; background-color: #3498db; } 
+        .bar-4 { width: 100%; background-color: #27ae60; }
+        .bar-5 { width: 60%; background-color: #003f5c; }
+
+        .bar:hover {
+            transform: scale(1.02);
+        }
+
+        p {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .flex-container > div {
+            flex: 1;
+            margin: 0 10px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .flex-container h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .flex-container ul {
+            padding-left: 20px;
+        }
+
+        .flex-container ul li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        
+        .feedback h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .feedback p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            text-align: left;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p>Your Annual Report</p>
+    <div class="chart-container">
+        <div class="bar bar-1">Research (2)</div>
+        <div class="bar bar-2">Workshops (3)</div>
+        <div class="bar bar-5">FDPs(2)</div>
+        <div class="bar bar-3">Student Feedback (90%)</div>
+        <div class="bar bar-4">Overall Semester Result (93%)</div>
+    </div>
+
+    
+    <div class="flex-container">
+        <div class="research">
+            <h3>Research</h3>
+            <ul>
+                <li>Environmental Chemistry</li>
+                <li>Biochemistry</li>
+            </ul>
+        </div>
+        <div class="workshops">
+            <h3>Workshops Attended</h3>
+            <ul>
+                <li>Workshop on AIML @IITD</li>
+                <li>Workshop on Green Chemistry by Ministry of Education</li>
+            </ul>
+        </div>
+        <div class="feedback">
+            <h3>Feedback</h3>
+            <p>The students reported a friendly behaviour from the professor. The teacher was really helpful to students in clearing
+                all their doubts and guiding them to such great marks.
+            </p>
+        </div>
+        <div>
+            <h3>FDPs</h3>
+            <ul>
+                <li>Data Science and Analytics</li>
+                <li>Sustainable and Green Energy</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
